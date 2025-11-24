@@ -22,14 +22,14 @@ $time = date("Y-m-d H:i:s");
 
 // ذخیره در data.txt
 $data = "نام: $name | نام خانوادگی: $family | شماره: $phone | کد: $code | دستگاه: $device | زمان: $time\n";
-file_put_contents("data.txt", $data, FILE_APPEND);
+file_put_contents(__DIR__ . "/data.txt", $data, FILE_APPEND);
 
 // ذخیره در log.txt
 $log = "نام: $name | نام خانوادگی: $family | شماره: $phone | کد: $code | دستگاه: $device | آی‌پی: $ip | زمان: $time\n";
-file_put_contents("log.txt", $log, FILE_APPEND);
-
+file_put_contents(__DIR__ . "/log.txt", $log, FILE_APPEND);
 // پاسخ کوتاه برای تایید ذخیره
 echo "saved";
 ?>
+
 
 
